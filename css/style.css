@@ -34,10 +34,10 @@ h3 {
   font-size: 28px;
   text-align: center;
 }
-/* a {
+a {
   text-decoration: none;
-  color: #fff;
-} */
+  color: #1b1b1b;
+}
 
 a.icon {
   text-decoration: none;
@@ -54,13 +54,9 @@ header {
   align-items: center;
 }
 
-/* .logo {
-  order: 2;
+.logo {
+  font-size: 24px;
 }
-
-.nav__menu {
-  order: 3;
-} */
 
 .nav__menu {
   display: flex;
@@ -102,10 +98,11 @@ a.nav__links {
   background-color: #e02c6d;
   color: #fff;
   width: 196px;
-  height: 44px;
   border: none;
   border-radius: 200px;
   cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
 }
 
 .banner {
@@ -284,7 +281,7 @@ POPULAR SECTION
   border-radius: 32px;
 }
 
-@media (min-width: 700px) and (max-width: 1100px) {
+@media (min-width: 761px) and (max-width: 1100px) {
   .collection {
     grid-template-columns: 329px 329px;
     justify-content: center;
@@ -304,7 +301,7 @@ POPULAR SECTION
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   header {
     text-align: center;
   }
@@ -312,6 +309,10 @@ POPULAR SECTION
   .ham-icon {
     display: block;
     cursor: pointer;
+    order: 1;
+  }
+  .logo {
+    order: 2;
   }
   .nav__links {
     display: inline-block;
