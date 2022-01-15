@@ -52,6 +52,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #787885;
 }
 
 /* .logo {
@@ -75,6 +76,14 @@ header {
   list-style: none;
   margin-left: 10px;
 }
+.ham-icon {
+  font-size: 24px;
+}
+
+.checkbox,
+.ham-icon {
+  display: none;
+}
 
 a.nav__links {
   text-decoration: none;
@@ -86,7 +95,7 @@ a.nav__links {
   font-size: 24px;
 }
 
-.heading {
+.banner-heading {
   font-size: 56px;
 }
 
@@ -300,7 +309,22 @@ POPULAR SECTION
   header {
     text-align: center;
   }
-  .heading {
+
+  .ham-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .link-grp {
+    flex-direction: column;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: orange;
+    z-index: 1;
+  }
+
+  .banner-heading {
     font-size: 28px;
   }
   .banner__left p {
