@@ -314,19 +314,29 @@ POPULAR SECTION
     display: block;
     cursor: pointer;
   }
+  .nav__links {
+    display: inline-block;
+  }
   .link-grp {
     flex-direction: column;
-    position: fixed;
-    top: 100px;
+    position: absolute;
+    top: 120px;
     left: 0;
     width: 100%;
-    background-color: orange;
+    background-color: #fff;
     z-index: 1;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    visibility: hidden;
   }
 
-  .banner-heading {
-    font-size: 28px;
+  .checkbox:checked ~ .link-grp {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
   }
+
   .banner__left p {
     font-size: 14px;
   }
