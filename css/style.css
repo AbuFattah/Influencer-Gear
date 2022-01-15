@@ -5,11 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* 
+
 *::selection {
-  color: orange;
-  background-color: purple; 
-} */
+  color: #fff;
+  background-color: #e02c6d;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -31,6 +31,7 @@ h3 {
 }
 
 .section__title {
+  margin: 30px 0;
   font-size: 28px;
   text-align: center;
 }
@@ -53,12 +54,12 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.logo {
+.logo a {
   font-size: 24px;
   color: #1b1b1b;
   transition: all 0.3s ease-in-out;
 }
-.logo:hover {
+.logo a:hover {
   color: #e02c6d;
 }
 
@@ -219,21 +220,27 @@ POPULAR SECTION
   width: 329px;
   height: 476px;
   padding: 17px 15px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 5px;
-  /* box-shadow: #32325d40 0px 6px 12px -2px, #0000004d 0px 3px 7px -3px; */
-
-  /* margin-bottom: 500px; */
+  transition: all 0.1s ease-in;
+  transform: translateY(0);
 }
 /* .card__img {
   width: 100%;
 } */
 
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 13px 32px 36px -14px rgba(179, 179, 179, 0.438);
+}
+
 .card__title {
   font-size: 28px;
+  font-weight: 500;
 }
 .card__price {
   font-size: 24px;
+  font-family: "Roboto", sans-serif;
 }
 .card__title,
 .card__price {
@@ -243,6 +250,7 @@ POPULAR SECTION
 .review,
 .card__mesg {
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 
 .review {
@@ -284,12 +292,17 @@ POPULAR SECTION
   color: #222;
 }
 .perk {
+  width: 400px;
   margin: 20px 0;
 }
 
 .perk__icon {
   color: #787885;
   font-size: 32px;
+  transition: 0.3s ease-in;
+}
+.perk:hover .perk__icon {
+  color: #e02c6d;
 }
 
 /* -----------------
@@ -333,6 +346,10 @@ POPULAR SECTION
   height: 32px;
   background-color: #22213c;
   border-radius: 32px;
+  transition: color 0.3s ease;
+}
+.social-icon:hover {
+  color: #e02c6d;
 }
 
 @media (min-width: 761px) and (max-width: 1100px) {
