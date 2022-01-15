@@ -53,6 +53,14 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.logo {
+  font-size: 24px;
+  color: #1b1b1b;
+  transition: all 0.3s ease-in-out;
+}
+.logo:hover {
+  color: #e02c6d;
+}
 
 .nav__menu a {
   position: relative;
@@ -72,10 +80,6 @@ header {
 
 .nav__menu a:hover::before {
   transform: scaleX(0.4);
-}
-
-.logo {
-  font-size: 24px;
 }
 
 .nav__menu {
@@ -123,6 +127,32 @@ a.nav__links {
   cursor: pointer;
   font-size: 16px;
   padding: 5px 10px;
+}
+
+.btn--main {
+  position: relative;
+}
+.btn--main:hover {
+  background-color: #e02c6ed3;
+}
+.right-arrow {
+  animation: dancing 1s linear infinite alternate;
+}
+
+.btn--main:hover .right-arrow {
+  animation-play-state: paused;
+}
+
+@keyframes dancing {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .banner {
@@ -235,6 +265,10 @@ POPULAR SECTION
   text-align: end;
 }
 
+.see-more:hover .right-arrow {
+  animation-play-state: paused;
+}
+
 .see-more a {
   text-decoration: none;
   color: #e02c6d;
@@ -330,6 +364,10 @@ POPULAR SECTION
     display: block;
     cursor: pointer;
     order: 1;
+    transition: color 0.3s ease;
+  }
+  .ham-icon:hover {
+    color: #e02c6d;
   }
   .logo {
     order: 2;
@@ -343,8 +381,8 @@ POPULAR SECTION
     top: 105px;
     left: 0;
     width: 100%;
-    background-color: #f4f4f4;
     z-index: 1;
+    background-color: #fff;
     transform: translateY(-10%);
     opacity: 0;
     transition: all 0.3s ease-in;
@@ -358,7 +396,7 @@ POPULAR SECTION
   }
 
   .banner-heading {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .banner__left p {
