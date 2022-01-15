@@ -52,7 +52,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #787885;
 }
 
 /* .logo {
@@ -320,10 +319,10 @@ POPULAR SECTION
   .link-grp {
     flex-direction: column;
     position: absolute;
-    top: 120px;
+    top: 105px;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #f4f4f4;
     z-index: 1;
     transform: translateY(-10%);
     opacity: 0;
@@ -335,6 +334,10 @@ POPULAR SECTION
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
+  }
+
+  .banner-heading {
+    font-size: 24px;
   }
 
   .banner__left p {
