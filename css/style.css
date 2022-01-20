@@ -222,10 +222,7 @@ PARTNERS SECTION
 POPULAR SECTION
 --------------------*/
 
-/* .section__title {
-  font-size: 28px;
-  text-align: center;
-} */
+
 
 .collection {
   display: grid;
@@ -233,7 +230,6 @@ POPULAR SECTION
   justify-content: space-evenly;
   justify-items: center;
   gap: 30px;
-  /* display: flex; */
 }
 
 .card {
@@ -245,9 +241,6 @@ POPULAR SECTION
   transition: all 0.1s ease-in;
   transform: translateY(0);
 }
-/* .card__img {
-  width: 100%;
-} */
 
 .card:hover {
   transform: translateY(-2px);
@@ -312,7 +305,7 @@ POPULAR SECTION
   color: #222;
 }
 .perk {
-  width: 400px;
+  flex:1;
   margin: 20px 0;
 }
 
